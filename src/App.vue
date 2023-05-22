@@ -1,9 +1,11 @@
 <script>
 import BaseLevelPicker from '@/components/base-level-picker'
+import BaseSection from '@/components/base-section'
 
 export default {
   components: {
     BaseLevelPicker,
+    BaseSection,
   },
 }
 
@@ -28,6 +30,7 @@ export default {
   <base-level-picker></base-level-picker>
   <base-level-picker></base-level-picker>
   </div>
+  <base-section></base-section>
 </div>
 </div>
 </template>
