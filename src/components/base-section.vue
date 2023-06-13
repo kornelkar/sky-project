@@ -64,7 +64,7 @@ padding: 40px 52px 40px 0;
             &-paragraph {
                 justify-self: flex-start;
                 margin-left: 40px;
-            }
+            } 
 
             
         }
