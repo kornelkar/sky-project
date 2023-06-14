@@ -1,11 +1,13 @@
 <script>
 import BaseLevelPicker from '@/components/base-level-picker.vue'
 import BaseSection from '@/components/base-section'
+import baseCreator from './components/base-creator.vue'
 
 export default {
     components: {
         BaseLevelPicker,
         BaseSection,
+        baseCreator,
     },
 }
 
@@ -30,6 +32,7 @@ export default {
                 <base-level-picker></base-level-picker>
             </div>
             <base-section></base-section>
+            <base-creator></base-creator>
         </div>
     </div>
 </template>

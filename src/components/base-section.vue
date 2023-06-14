@@ -15,9 +15,8 @@
                                                   :alt="MoonPhaseOptions[selectedOptionMoonPhase].alt"></div>
             <div class="section__main-article">
                 <div class="section__main-article-title"> {{ MoonPhaseOptions[selectedOptionMoonPhase].label }}</div>
-                <div class="section__main-article-paragraph">{{
-                    MoonPhaseOptions[selectedOptionMoonPhase].paragraph
-                    }}
+                <div class="section__main-article-paragraph">
+                  {{ MoonPhaseOptions[selectedOptionMoonPhase].paragraph }}
                 </div>
             </div>
         </div>
@@ -102,7 +101,8 @@ export default {
                     id: 1,
                     value: "1",
                     label: "Nów",
-                    paragraph: "Nów - Kiedy Księżyc jest między Ziemią a Słońcem, z naszej perspektywy nie widzimy oświetlonej części Księżyca. Jest to początek nowego cyklu.",
+                    paragraph: "W większości języków europejskich nazwa nowiu w dosłownym tłumaczeniu brzmi: nowy księżyc. Jedna z faz Księżyca, w której Księżyc znajduje się między Słońcem a Ziemią, czyli jest w koniunkcji ze Słońcem patrząc z Ziemi. W tej pozycji cała strona Księżyca widoczna z Ziemi jest w cieniu, wobec czego Księżyc nie jest widoczny gołym okiem. Zjawisko to można zaobserwować nad zachodnim horyzontem w krótkim okresie między zachodem Słońca a zachodem Księżyca. Z tego powodu dokładny czas, a nawet data wystąpienia zjawiska z definicji zależy od położenia geograficznego obserwatora. Z astronomicznego punktu widzenia nów pojawia się wtedy, gdy jest w koniunkcji ze Słońcem w układzie ekliptycznym. Ten moment jest jednoznaczny i nie zależy od położenia, a w niektórych okolicznościach zbiega się z zaćmieniem Słońca.",
+
                     img: 'img/Crescent_Moon.jpg',
                     alt: 'Nów',
                 },
@@ -118,7 +118,7 @@ export default {
                     id: 3,
                     value: "3",
                     label: "I kwadra",
-                    paragraph: "I kwadra - W tej fazie widzimy połowę Księżyca, która jest oświetlona. Jest to połowa, która jest widoczna południowo.",
+                    paragraph: "Faza Księżyca, w której Ziemia, Księżyc i Słońce tworzą ze sobą kąt prosty a Księżyc w tym czasie zbliża się do pełni. W tym momencie, dla obserwatorów na Ziemi widoczna jest tylko wschodnia część tarczy Księżyca. Księżyc wschodzi w środku dnia i zachodzi w środku nocy, przez co można go bardzo wygodnie obserwować. W pobliżu granicy między oświetloną i nieoświetloną częścią Księżyca, panują najlepsze warunki do obserwacji struktur na jego powierzchni takich jak kratery, góry, doliny. Podczaskwadry pierwszej amplituda pływów morskich jest obniżona i stąd określane są jako pływy kwadraturowe.. Jest to połowa, która jest widoczna południowo.",
                     img: 'img/1280px-Logroño_moon_waxing_half_moon.jpg',
                     alt: 'I kwadra'
                 },
@@ -126,7 +126,7 @@ export default {
                     id: 4,
                     value: "4",
                     label: "Pełnia",
-                    paragraph: "Gibbous (pełnia) - Kiedy Księżyc jest w pełni oświetlony, mamy fazę pełni. Widzimy całą oświetloną stronę Księżyca.",
+                    paragraph: "Faza księżyca, podczas której Księżyc znajduje się w opozycji do Słońca. Księżyc znajduje się po przeciwnej stronie Ziemi niż Słońce. Dokładniej, pełnia występuje wtedy, gdy długości ekliptyczne Słońca i Księżyca różnią się o 180 stopni. Podczas pełni półkula Księżyca skierowana w stronę Ziemi osiąga maksimum oświetlenia, które obejmuje ją prawie w całości, a tarcza Księżyca jest widoczna w przybliżeniu jako koło. W tym czasie przeciwna jego półkula, niewidoczna z Ziemi, jest nieoświetlona. Zazwyczaj w jednym miesiącu kalendarzowym występuje jedna pełnia. Jedynie w czasie pełni możliwe jest wystąpienie zaćmienia Księżyca.",
                     img: 'img/FullMoon.jpg',
                     alt: 'Pełnia'
                 },
@@ -134,7 +134,7 @@ export default {
                     id: 5,
                     value: "5",
                     label: "III kwadra",
-                    paragraph: "III kwadra - W tej fazie widzimy połowę Księżyca, która jest oświetlona. Jest to połowa, która jest widoczna północno.",
+                    paragraph: "Faza Księżyca, w której Ziemia, Księżyc i Słońce tworzą ze sobą kąt prosty a Księżyc w tym czasie zbliża się do nowiu. W tym momencie, dla obserwatorów na Ziemi widoczna jest jako oświetlona tylko zachodnia część widocznej strony Księżyca. Podczas kwadr Słońce oświetla część powierzchni Księżyca zwróconą w stronę Ziemi pod małym kątem, więc jego formy morfologiczne w tym obszarze są wówczas bardzo dobrze widoczne. Najlepsze warunki do obserwacji tych struktur są przy granicy między oświetloną i nieoświetloną częścią Księżyca. Faza ta ma miejsce 21 dnia czterotygodniowego cyklu. Cień, zasłaniający prawą połowę księżycowej tarczy, będzie się teraz przesuwał w lewo i po siedmiu dniach Księżyc znajdzie się w nowiu.",
                     img: 'img/HalfMoon.jpg',
                     alt: 'III kwadra'
                 },
