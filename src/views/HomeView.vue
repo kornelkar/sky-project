@@ -3,10 +3,10 @@
         <div class="header navbar row">
             <div class="header__title row">ZARZĄDZAJ SWOIM NOCNYM NIEBEM</div>
             <div class="header__menu row">
-                <div class="col" on-click="widocznosc()">POZIOM WIDOCZNOŚCI</div>
-                <div class="col" on-click="fazy()">FAZY KSIĘŻYCA</div>
-                <div class="col" on-click="dodajGwiazde()">DODAJ GWIAZDĘ</div>
-                <div class="col" on-click="dodajKonstylacje()">DODAJ KONSTYLACJĘ</div>
+                <div class="col" on-click="visibility()">POZIOM WIDOCZNOŚCI</div>
+                <div class="col" on-click="phases()">FAZY KSIĘŻYCA</div>
+                <div class="col" on-click="addStar()">DODAJ GWIAZDĘ</div>
+                <div class="col" on-click="addConstilation()">DODAJ KONSTYLACJĘ</div>
                 <i class="expand.svg"></i>
             </div>
         </div>
@@ -26,7 +26,7 @@
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
