@@ -65,7 +65,7 @@
 
 <template>
     <div class="creator col">
-        <div class="creator__title">GWIAZDY</div> 
+        <div class="creator__title">GWIAZDY</div>
         <div class="creator__name">
             <label for="name" class="creator__name--title">NAZWA:</label>
             <input
@@ -107,8 +107,8 @@ export default {
 
     methods: {
         submitForm() {
-            console.log("WYSYŁANIE");
-        }, 
+            console.log("WYSYŁANIE 1");
+        },
     },
 };
 </script>

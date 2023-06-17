@@ -8,9 +8,13 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@prisma/client": "^4.15.0",
     "axios": "^1.4.0",
     "bootstrap": "^3.4.1",
     "core-js": "^3.8.3",
+    "http-status-codes": "^2.2.0",
+    "prisma": "^4.15.0",
+    "uuid": "^9.0.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
