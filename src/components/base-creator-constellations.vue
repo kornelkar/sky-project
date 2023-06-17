@@ -1,4 +1,4 @@
-<style lang="scss">
+<style lang="scss" scoped>
 .creator {
   background-color: #272747;
   margin-top: 50px;

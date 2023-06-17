@@ -1,4 +1,4 @@
-<style lang="scss">
+<style lang="scss" scoped>
 .creator {
   background-color: #272747;
   margin-top: 50px;
@@ -65,7 +65,7 @@
 
 <template>
     <div class="creator col">
-        <div class="creator__title">GWIAZDY</div>    <!--{{ getTitle }}-->
+        <div class="creator__title">GWIAZDY</div> 
         <div class="creator__name">
             <label for="name" class="creator__name--title">NAZWA:</label>
             <input
@@ -108,9 +108,7 @@ export default {
     methods: {
         submitForm() {
             console.log("WYSYŁANIE");
-        },
-
-        getTitle: "GWIAZDY",
+        }, 
     },
 };
 </script>

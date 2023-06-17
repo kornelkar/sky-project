@@ -23,7 +23,7 @@
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .section {
   margin-top: 34px;
   background-color: #272747;
