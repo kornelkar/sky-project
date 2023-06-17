@@ -1,5 +1,5 @@
 <template>
-    <div class="picker">
+    <div class="picker col-lg-4 col-sm-12">
         <div class="picker__title">ZACHMURZENIE</div>
         <select class="picker__options" v-model="selectedOptionCloud" @change="weather">
             <option v-for="option in CloudOtions" :value="option.value" :key="option.id">
@@ -7,7 +7,7 @@
             </option>
         </select>
     </div>
-    <div class="picker">
+    <div class="picker col-lg-4 col-sm-12">
         <div class="picker__title">POZIOM OPADÓW</div>
         <select class="picker__options" v-model="selectedOptionRainfall" @change="weather">
             <option v-for="option in RainfallOtions" :value="option.value" :key="option.id">
@@ -16,7 +16,7 @@
         </select>
 
     </div>
-    <div class="picker">
+    <div class="picker col-lg-4 col-sm-12">
         <div class="picker__title">POZIOM MGŁY</div>
         <select class="picker__options" v-model="selectedOptionFog" @change="weather">
             <option v-for="option in FogOptions" :value="option.value" :key="option.id">

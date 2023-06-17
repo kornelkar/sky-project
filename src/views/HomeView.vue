@@ -1,23 +1,27 @@
 <template>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
-          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <div class="sky">
-        <div class="header">
-            <div class="header__title">ZARZĄDZAJ SWOIM NOCNYM NIEBEM</div>
-            <div class="header__menu">
-                <div on-click="widocznosc()">POZIOM WIDOCZNOŚCI</div>
-                <div on-click="fazy()">FAZY KSIĘŻYCA</div>
-                <div on-click="dodajGwiazde()">DODAJ GWIAZDĘ</div>
-                <div on-click="dodajKonstylacje()">DODAJ KONSTYLACJĘ</div>
+    <div class="sky container-fluid">
+        <div class="header navbar row">
+            <div class="header__title row">ZARZĄDZAJ SWOIM NOCNYM NIEBEM</div>
+            <div class="header__menu row">
+                <div class="col" on-click="widocznosc()">POZIOM WIDOCZNOŚCI</div>
+                <div class="col" on-click="fazy()">FAZY KSIĘŻYCA</div>
+                <div class="col" on-click="dodajGwiazde()">DODAJ GWIAZDĘ</div>
+                <div class="col" on-click="dodajKonstylacje()">DODAJ KONSTYLACJĘ</div>
                 <i class="expand.svg"></i>
             </div>
         </div>
-        <div class="main">
-            <div class="main__picker">
+        <div class="row">
+            <div class="row">
                 <base-level-picker></base-level-picker>
             </div>
             <base-section></base-section>
+            <div class="row">
             <base-creator></base-creator>
+            <base-creator-constellations></base-creator-constellations>
+            </div>
+            <base-section-star></base-section-star>
+            <base-section-constellation></base-section-constellation>
+            <footer class="row mt-4">Stopka</footer>
         </div>
     </div>
 </template>
@@ -31,12 +35,15 @@
   color: #2c3e50;
 }
 
-.header {
-  width: 100%;
+.sky
+{
+    padding: 0;
+}
 
+.header {
+ padding-top: 0;
 
   &__title {
-    display: flex;
     justify-content: center;
     background-color: #272747;
     font-size: 52px;
@@ -45,8 +52,6 @@
   }
 
   &__menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     background-color: #7271A4;
     font-size: 24px;
     padding: 15px 30px;
@@ -55,17 +60,16 @@
   }
 
 }
-
-.main {
-
-  &__picker {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-  }
-
-
+footer{
+    background-color: #272747;
+    color: white;
+    height: 150px;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
 }
+
+
 
 </style>
 
@@ -76,11 +80,20 @@ import BaseSection from '@/components/base-section';
 
 import baseCreator from '@/components/base-creator.vue';
 
+import baseCreatorConstellations from '@/components/base-creator-constellations.vue';
+
+import BaseSectionStar from '@/components/base-section-star.vue';
+import BaseSectionConstellation from '@/components/base-section-constellation.vue';
+
+
 export default {
   components: {
     BaseLevelPicker,
     BaseSection,
     baseCreator,
+      baseCreatorConstellations,
+      BaseSectionStar,
+      BaseSectionConstellation,
   },
 }
 
