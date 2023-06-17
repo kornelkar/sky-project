@@ -47,6 +47,7 @@
         height: 50px;
         text-align: center;
         background-color: #b8b8b8;
+          cursor: pointer;
 
       }
     }

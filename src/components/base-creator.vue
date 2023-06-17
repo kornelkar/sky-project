@@ -33,6 +33,10 @@
       width: 50%;
       border: none;
   }
+    &__add-button:hover{
+        cursor: pointer;
+        background-color: rgba(114,113,164,0.6);
+    }
     input[type=text]
     {
         background-color: #B8B8B8;
@@ -46,6 +50,11 @@
         height: 25%;
         width: 50%;
         border: none;
+    }
+    input[type=file]::file-selector-button:hover
+    {
+        cursor: pointer;
+        background-color: rgba(114,113,164,0.6);
     }
 
   &__attach-file--input {

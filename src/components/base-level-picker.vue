@@ -42,6 +42,7 @@
     width: 100%;
     text-align: center;
     height: 50px;
+      cursor: pointer;
   }
 }
 </style>
