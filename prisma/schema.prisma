@@ -18,3 +18,21 @@ name String?
 password String
 
 }
+
+model Star {
+
+id String @id
+name String @unique
+description String?
+id_constellation String
+
+}
+model constellation {
+
+id String @id
+name String @unique
+description String?
+
+
+}
+
