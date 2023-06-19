@@ -3,10 +3,6 @@
         <div class="header navbar row">
             <div class="header__title row">ZARZĄDZAJ SWOIM NOCNYM NIEBEM</div>
             <div class="header__menu row">
-                <div class="col" on-click="visibility()">POZIOM WIDOCZNOŚCI</div>
-                <div class="col" on-click="phases()">FAZY KSIĘŻYCA</div>
-                <div class="col" on-click="addStar()">DODAJ GWIAZDĘ</div>
-                <div class="col" on-click="addConstilation()">DODAJ KONSTYLACJĘ</div>
                 <i class="expand.svg"></i>
             </div>
         </div>
@@ -35,67 +31,59 @@
   color: #2c3e50;
 }
 
-.sky
-{
-    padding: 0;
+.sky {
+  padding: 0;
 }
 
 .header {
- padding-top: 0;
+  padding-top: 0;
 
   &__title {
     justify-content: center;
     background-color: #272747;
     font-size: 52px;
-    color: #EBED88;
+    color: #ebed88;
     padding: 72px 200px;
   }
 
   &__menu {
-    background-color: #7271A4;
+    background-color: #7271a4;
     font-size: 24px;
     padding: 15px 30px;
     color: aliceblue;
     margin-bottom: 32px;
   }
-
 }
-footer{
-    background-color: #272747;
-    color: white;
-    height: 150px;
-    font-size: 50px;
-    align-items: center;
-    justify-content: center;
+footer {
+  background-color: #272747;
+  color: white;
+  height: 150px;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
 }
-
-
-
 </style>
 
 <script>
-import BaseLevelPicker from '@/components/base-level-picker.vue';
+import BaseLevelPicker from "@/components/base-level-picker.vue";
 
-import BaseSection from '@/components/base-section';
+import BaseSection from "@/components/base-section";
 
-import baseCreator from '@/components/base-creator.vue';
+import baseCreator from "@/components/base-creator.vue";
 
-import baseCreatorConstellations from '@/components/base-creator-constellations.vue';
+import baseCreatorConstellations from "@/components/base-creator-constellations.vue";
 
-import BaseSectionStar from '@/components/base-section-star.vue';
-import BaseSectionConstellation from '@/components/base-section-constellation.vue';
-
+import BaseSectionStar from "@/components/base-section-star.vue";
+import BaseSectionConstellation from "@/components/base-section-constellation.vue";
 
 export default {
   components: {
     BaseLevelPicker,
     BaseSection,
     baseCreator,
-      baseCreatorConstellations,
-      BaseSectionStar,
-      BaseSectionConstellation,
+    baseCreatorConstellations,
+    BaseSectionStar,
+    BaseSectionConstellation,
   },
-}
-
+};
 </script>
-

@@ -34,6 +34,8 @@
     background-color: #272747;
     color: #EBED88;
     font-size: 32px;
+    justify-content: center;
+    display: flex;
   }
 
   &__options {

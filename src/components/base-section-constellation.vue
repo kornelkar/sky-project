@@ -70,6 +70,7 @@
     &-article {
       color: aliceblue;
       max-width: 880px;
+      margin-left: 40px;
 
       &-title {
         margin-bottom: 18px;
@@ -78,7 +79,6 @@
 
       &-paragraph {
         justify-self: flex-start;
-        margin-left: 40px;
       }
     }
   }

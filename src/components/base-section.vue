@@ -1,7 +1,7 @@
 <template>
     <div class="section row">
         <div class="section__header">
-            <div class="section__header-title">FAZY KSIĘŻYCA</div>
+            <div class="section__header-title">Fazy Księżyca</div>
             <div class="section__header-select">
                 <select v-model="selectedOptionMoonPhase">
                     <option v-for="option in MoonPhaseOptions" :value="option.value" :key="option.id">
@@ -35,6 +35,7 @@
 
     &-title {
       font-size: 32px;
+      color: #ebed88;
       background-color: #7271a4;
       padding: 16px 80px 16px 16px;
       border-top-right-radius: 50%;
@@ -71,6 +72,7 @@
     &-article {
       color: aliceblue;
       max-width: 880px;
+      margin-left: 40px;
 
       &-title {
         margin-bottom: 18px;
@@ -79,7 +81,6 @@
 
       &-paragraph {
         justify-self: flex-start;
-        margin-left: 40px;
       }
     }
   }

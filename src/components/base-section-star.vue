@@ -35,6 +35,7 @@
 
     &-title {
       font-size: 32px;
+      color: #ebed88;
       background-color: #7271a4;
       padding: 16px 80px 16px 16px;
       border-top-right-radius: 50%;
@@ -69,6 +70,7 @@
     &-article {
       color: aliceblue;
       max-width: 880px;
+      margin-left: 40px;
 
       &-title {
         margin-bottom: 18px;
@@ -77,7 +79,6 @@
 
       &-paragraph {
         justify-self: flex-start;
-        margin-left: 40px;
       }
     }
   }
