@@ -1,47 +1,39 @@
 <style lang="scss" scoped>
 .creator {
-  background-color: #272747;
-  margin-top: 50px;
-  margin: 0 50px 0 50px;
-  padding: 30px;
-  width: 400px;
-  color: aliceblue;
-  justify-items: center;
-  align-items: center;
-    height: 350px;
+    background-color: #272747;
+    margin-top: 50px;
+    margin-right: 10px;
+    padding: 30px;
+    width: 400px;
+    color: aliceblue;
+    justify-items: center;
+    align-items: center;
 
-  &__title {
-    color: #ebed88;
-    font-size: 24px;
-  }
-
-  &__name {
-    text-align: left;
-  }
-
-  &__description {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__add-button {
-    color: #ebed88;
-    background-color: #7271A4;
-      margin-top: 20px;
-      height: 25%;
-      width: 50%;
-      border: none;
-  }
-    &__add-button:hover{
-        cursor: pointer;
-        background-color: rgba(114,113,164,0.6);
+    &__title {
+        color: #ebed88;
+        font-size: 24px;
     }
-    input[type=text]
-    {
+
+    &__name,
+    &__description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__add-button {
+        color: #ebed88;
+        background-color: #7271A4;
+    }
+
+    &__attach-file--input {
+        margin-left: 50px;
+    }
+
+    input[type=text] {
         background-color: #B8B8B8;
         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
+
     input[type=file]::file-selector-button
     {
         color: white;
@@ -56,10 +48,6 @@
         cursor: pointer;
         background-color: rgba(114,113,164,0.6);
     }
-
-  &__attach-file--input {
-    margin-left: 50px;
-  }
 }
 </style>
 

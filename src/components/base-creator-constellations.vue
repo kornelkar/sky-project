@@ -1,6 +1,7 @@
 <style lang="scss" scoped>
 .creator {
   background-color: #272747;
+    margin-left: 10px;
   margin-top: 50px;
   padding: 30px;
   width: 400px;
@@ -27,6 +28,25 @@
   &__attach-file--input {
     margin-left: 50px;
   }
+    input[type=text] {
+        background-color: #B8B8B8;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    input[type=file]::file-selector-button
+    {
+        color: white;
+        background-color: #7271A4;
+        margin-top: 20px;
+        height: 25%;
+        width: 50%;
+        border: none;
+    }
+    input[type=file]::file-selector-button:hover
+    {
+        cursor: pointer;
+        background-color: rgba(114,113,164,0.6);
+    }
 }
 </style>
 
